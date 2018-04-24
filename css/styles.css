@@ -1,0 +1,51 @@
+
+
+/* The hero image */
+body, html {
+    height: 100%;
+    margin: 0;
+
+
+
+}
+
+.bg {
+    /* The image used */
+    background-image: url("software.jpg");
+    opacity: 1;
+    /* Full height */
+    height: 100%; 
+     
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  
+  #about, #work, #contact{
+    margin-top:10px;
+  	width:100%;
+  	height:100%;
+
+  	background-color: black;
+    
+  }
+  @media only screen and (max-width: 600px){
+    body{
+      background-color: lightblue;
+    }
+  }
+
+
+
