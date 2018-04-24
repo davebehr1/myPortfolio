@@ -8,20 +8,10 @@ body, html {
 
 
 }
-#carrot{
-  bottom:0px;
-  position:absolute;
-  top:90%;
-  left:42%;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+.navbar{
+ background-color: #252934; 
 }
+
 .btn{
   transition: all .2s ease-in-out;
 }
@@ -30,6 +20,7 @@ body, html {
   padding: 12px 22px;
 }
 .btn-primary.outline {
+  border-radius: 30px;
   border: 2px solid #353130;
   color: #353130;
 }
@@ -48,6 +39,7 @@ body, html {
     /* The image used */
     background-image: url("software.jpg");
     opacity: 1;
+    position: relative;
     /* Full height */
     height: 100%; 
      
@@ -56,8 +48,55 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-footer{
+.bg img{
+  height:25%;
+  display: block; 
+  margin:0 auto;
 
+}
+.bg .btn-primary{
+  width: 20%;
+  border-radius: 30px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 70%;
+  color:white;
+  border-color: white;
+
+}
+
+.bg .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active{
+  color: none;
+  border: 0 none;
+  background-color : white;
+  transform: scale(1.1); 
+}
+#carrot{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 90%;
+
+  font-size: 15px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #252A30;
 }
 .row{
@@ -71,13 +110,17 @@ footer{
     position: relative
 }
 .col-sm-3{
-  height: 60%;
+  height: 300px;
   margin:10px;
   background-color: #96938C;
 }
 .sociallinks{
-  margin-left:44%;
-  bottom:10%;
+  margin:0 auto;
+  display:block;
+  margin-bottom: 20px;
+}
+.sociallinks a{
+  margin-left: 5px;
 }
 .affix {
       top: 0;
@@ -91,19 +134,29 @@ footer{
   
   #about{
   	width:100%;
-  	height:100%;
+  	
    
 
   	background-color: #EEE;
     
   }
+  #about p {
+    margin:5%;
+    text-align: justify;
+    display: none;
+  }
+  #about h2{
+    display: none;
+  }
   #work{
     width:100%;
-    height:100%;
 
     background-color: #303942;
-
   }
+  #workwith{
+    text-align: center;
+  }
+
   #contact{
     width:100%;
     height:100%;
@@ -113,16 +166,21 @@ footer{
   }
   #message{
     width:100%;
-    height:100%;
-
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
     background-color: #96938C;
 
   }
-  button{
-    margin-left:40%;
-    margin-top:40%;
-    position: absolute;
-  }
+ #message button{
+  margin:0 auto;
+  display:block;
+  margin-bottom: 20px;
+ }
+  .row2{
+  background-color: #353130;
+}
+ 
 
    @keyframes bounce {
   0%, 100%, 20%, 50%, 80% {
