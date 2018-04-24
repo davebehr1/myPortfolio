@@ -3,11 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>PORTFOLIO</title>
-	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      <link rel="stylesheet" href="css/styles.css">
     
 </head>
@@ -18,9 +16,6 @@
   	<div id="typewriter" style="color:white;text-align: center;margin:0 auto;display: block;"></div>
     <div id ="carrot" style="bottom:0px;position:absolute;top:90%;left:45%;"><img src="css/dell.png" style="width: 100px;"></div>
   </div>
-
-
-
 
 <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
   <div class="container-fluid">
@@ -35,18 +30,15 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </li>
+        <li><a class= 'scroll' href="#about">Page 2</a></li>
+        <li><a class = 'scroll' href="#contact">Page 3</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+
+
 
 
   <div id="about"></div>
@@ -57,11 +49,23 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script>
+  
+  var scrollLink = $('.scroll');
+  
+  // Smooth scrolling
+  scrollLink.click(function(e) {
+   
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 2000 );
+  });
 
-   $(window).scroll(function(){
+  $(window).scroll(function(){
 
     $(".bg").css("opacity", 1 - $(window).scrollTop() / 700);
   });
@@ -107,13 +111,6 @@
 
   
 
-	$(function(){
-    $('.navbar').affix({
-      offset: {
-        /* Affix the navbar after scroll below header */
-        top: $(".bg").outerHeight(true)}
-    });
-});
 
 
 	</script>
