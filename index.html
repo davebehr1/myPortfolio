@@ -10,7 +10,7 @@
     
 </head>
 <body>
-  <div class="bg">
+  <div class="bg" id ="top">
   	<img src="css/dell.png" alt="a bear" style="height:20%;display: block; margin:0 auto;"/>
   	<h2 style="text-align:center; margin-top:10%; color: white;"> HELLO MY NAME IS DAVID,
   	<div id="typewriter" style="color:white;text-align: center;margin:0 auto;display: block;"></div>
@@ -29,7 +29,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a class = "scroll" href="#top">Home</a></li>
         <li><a class= 'scroll' href="#about">Page 2</a></li>
         <li><a class = 'scroll' href="#contact">Page 3</a></li>
       </ul>
@@ -62,8 +62,16 @@
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top
-    }, 2000 );
+    }, 1000 );
   });
+
+
+  $('#carrot').click(function(){
+      $('body,html').animate({
+      scrollTop: $('#about').position().top
+    },1000);
+  });
+
 
   $(window).scroll(function(){
 
