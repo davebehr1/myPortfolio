@@ -50,6 +50,7 @@ body, html {
     height: 100%; 
      
     /* Center and scale the image nicely */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -254,12 +255,13 @@ footer{
   right: 0;
   bottom: 0;
   left: 0;
-  border: 2px solid #353130;
+  background: #353130;
   border-radius: 0;
   box-shadow: none;
 }
 .modal-header {
   position: absolute;
+  text-align: center;
   top: 0;
   right: 0;
   left: 0;
@@ -284,13 +286,5 @@ footer{
   overflow: auto;
 
 }
-.modal-footer {
-  position: absolute;
-  background: #353130;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 60px;
-  padding: 10px;
-}
+
 
