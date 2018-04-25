@@ -9,18 +9,20 @@ body, html {
 #typewriter{
   margin-top:20px;
   height:45px;
+  display: block;
 }
 .line-1{
 
     position: relative;
     height:100%;
-    width: 24em;
+    width: 20em;
     padding-top: 5px;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 100%;
     text-align: center;
     white-space: nowrap;
+    word-wrap: break-word;
     overflow: hidden;
     transform: translateY(-40%);    
 }
@@ -33,7 +35,7 @@ body, html {
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 20em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -81,10 +83,7 @@ button[type=submit]{
 #formMessage input{
       background-color:rgba(0,0,0,0) !important;
 }
-a{
-  text-decoration: none;
-  border: 0;
-}
+
 
 .btn{
   transition: all .2s ease-in-out;
@@ -95,18 +94,21 @@ a{
 }
 .carRental{
    background-image: url('carRental.jpg');
+   background-repeat: no-repeat;
 }
 .anim{
   background-image: url('anim.jpg');
+  background-repeat: no-repeat;
 }
 .boxImage{
   z-index: 1 !important;
   position: relative;
+  margin:0px;
+  padding:0px;
   width:100%;
   height:100%;
- 
-  background-size: 220%;
-  background-repeat: no-repeat;
+  background-image: 220%;
+ background-position:center;
   transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -139,10 +141,15 @@ a{
   transform: scale(1.1); 
 }
 .bg{
+    width:100%;
+      padding-bottom:20px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* The image used */
     background-image: url("software.jpg");
     opacity: 1;
-    position: relative;
+    
     /* Full height */
     height: 100%; 
      
@@ -152,6 +159,8 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 @media (min-width: 601px) {
   .bg {
@@ -204,9 +213,6 @@ a{
 
 }
 
-.bg a{
-  width: 20%;
-}
 .bg .btn-primary {
   
   border-radius: 30px;
@@ -219,6 +225,17 @@ a{
   color:white;
   border-color: white;
 
+}
+.btn-default{
+  color:white;
+  border-radius:30px;
+  font-weight: bold;
+  font-size: 
+}
+.btn-default:hover{
+  background-color: white;
+  color:none;
+  transform: scale(1.1);
 }
 .bg .responsive-width{
   font-size: 1.5vw;
@@ -255,25 +272,14 @@ footer{
   justify-content: center;
   background-color: #252A30;
 }
-.row{
 
-   width: 70%; 
-   height: 60%;
-    
-    margin: 0 auto;
-    margin-top:10%;
-    margin-left:20%;
-    position: relative
-}
-.col-sm-3{
+.col-md-3{
   overflow:hidden;
   position: relative;
   text-align: center;
   color: white;
   height: 300px;
-  margin:10px;
-  padding:0px;
-  background-color: #96938C;
+  padding:10px;
 }
 .sociallinks{
   margin:0 auto;

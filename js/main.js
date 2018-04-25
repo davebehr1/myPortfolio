@@ -2,6 +2,17 @@
   duration: 1200,
  });
 
+
+  $("#formMessage").submit(function(e) {
+  e.preventDefault();
+  alert('hey');
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+  });
+
   $('submit').click(function(){
     $('#feeback').append('<h2>will be in touch shortly</h2>');
   });

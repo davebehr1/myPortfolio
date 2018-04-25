@@ -14,11 +14,11 @@
     
 </head>
 <body>
-  <div class="bg container-fluid" id ="top">
+  <div class="bg" id ="top">
   	<img src="css/dell.png" alt="a bear"/>
   	<h2 style="text-align:center; margin-top:10%; color: white;font-weight:bold;"> HELLO MY NAME IS DAVID,
-  	<div id="typewriter"><p class="line-1 anim-typewriter">I BUILD AND DEPLOY WEBSITES AND APPS</p></div>
-    <a  type="button" class ="btn btn-primary btn-lg outline scroll responsive-width" href="#message">SEND MESSAGE</a>
+  	<div id="typewriter"><p class="line-1 anim-typewriter">I BUILD WEBSITES AND APPS</p></div>
+    <a href="#message" class ="btn btn-default outline scroll"  role="button">SEND MESSAGE</a>
     <div id ="carrot"><p>learn more about what i do</p><img src="css/arrow.png" style="width: 30px;"></div>
   </div>
 
@@ -58,9 +58,10 @@ Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing di
   <div id="work" class=" container">
     <div style="text-align: center;"> <h2 style="color:#96938C;"> PERSONAL PROJECTS </h2></div>
     <div class="row" >
-        <div class="col-sm-3" data-aos="fade-right"><div id="carText"><p>3hthgrjgorjrjgioerhgoerhgiuhuvjhdijghejrf</div><div class="boxImage anim"></div></div>
-        <div class="col-sm-3" data-aos="fade-right"><div id="carText"><p>3hthgrjgorjrjgioerhgoerhgiuhuvjhdijghejrf</div><div class="boxImage carRental"></div></div>
-        <div class="col-sm-3" data-aos="fade-right"><div id="carText"><p>3hthgrjgorjrjgioerhgoerhgiuhuvjhdijghejrf</div><div class="boxImage carRental"></div></div>  
+        <div class=" col-xs-6 col-md-3  " data-aos="fade-right"><div id="carText">3hthgrjgorjrjgioerhgoerhgiuhuvjhdijghejrf</div><div class="boxImage anim"></div></div>
+        <div class="col-xs-6 col-md-3" data-aos="fade-right"><div id="carText">3hthgrjgorjrjgioerhgoerhgiuhuvjhdijghejrf</div><div class="boxImage carRental"></div></div>
+        <div class="col-xs-6 col-md-3" data-aos="fade-right"><div id="carText">3hthgrjgorjrjgioerhgoerhgiuhuvjhdijghejrf</div><div class="boxImage carRental"></div></div>  
+          <div class="col-xs-6 col-md-3" data-aos="fade-right"><div id="carText">3hthgrjgorjrjgioerhgoerhgiuhuvjhdijghejrf</div><div class="boxImage carRental"></div></div>  
   </div>
   </div>
 
@@ -122,7 +123,7 @@ Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing di
         </div>
         <div class="modal-body">
             <div id="feedback"></div>
-            <form  id= 'formMessage' name ="contact" action="/" netlify>
+            <form  id= 'formMessage' name ="contact" method="POST" action="/" netlify>
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
