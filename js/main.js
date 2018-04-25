@@ -25,6 +25,8 @@
   $('#closer').click(function(){
     $('.navbar').show();
   });
+
+
   $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
@@ -36,14 +38,12 @@
 };
 
   $(window).on("resize scroll", function() {
-      if($('#about').isInViewport()){
-        console.log('fade in');
-        $('#about p').fadeIn(2000,function(){
-          $('#about h2').fadeIn(2000);
-        });
-      }else{
-        console.log('fade out');
+      if($('.react').isInViewport()){
+        console.log('in view port');
       }
+      /*if($('#contact').isInViewport()){
+        console.log('In view port');
+      }*/
 });
 
   var scrollLink = $('.scroll');

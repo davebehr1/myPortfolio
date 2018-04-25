@@ -15,7 +15,7 @@ body, html {
 
     position: relative;
     height:100%;
-    width: 20em;
+    width: 16em;
     padding-top: 5px;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
@@ -29,13 +29,13 @@ body, html {
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 6s steps(44) 1s 1 normal both,
+  animation: typewriter 5s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
   animation-iteration-count: infinite;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 20em;}
+  to{width: 16em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -178,7 +178,6 @@ button[type=submit]{
   }
 }
 .information{
-  float:right;
 }
 .bg img{
   height:25%;
