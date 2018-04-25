@@ -167,6 +167,9 @@ button[type=submit]{
     background-image: url("software.jpg");
   }
 }
+#about p{
+  font-size: 20px;
+}
 
 @media (max-width: 600px) {
   .bg {      

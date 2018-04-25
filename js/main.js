@@ -6,6 +6,7 @@
   $("#formMessage").submit(function(e) {
   e.preventDefault();
  // $('#feedback').append('<h3 style="color:white;text-align:center;">will be in contact soon</h3>');
+  $('#feedback').empty();
   $('<h3 style="color:white;text-align:center;">will be in contact soon</h3>').hide().appendTo('#feedback').fadeIn(1000);
 
   var $form = $(this);
