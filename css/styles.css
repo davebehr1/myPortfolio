@@ -174,21 +174,35 @@ button[type=submit]{
      background-color: #2B353A;
   }
 }
-
+.information{
+  float:right;
+}
 .bg img{
   height:25%;
   display: block; 
   margin:0 auto;
 
 }
+#skillheading{
+  text-align: center;
+}
+.skillType{
+  margin-left:20px;
+  height:300px;
+  background-color: black;
+}
 .vizskill{
   height:35px;
-  width: 50%;
+  width: 100%;
   background-color: #FFF;
   margin-bottom: 30px;
 }
 .name{
   height:100%;
+  color:white;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
   background-color: #63798e;
   width:20%;
   float:left;
@@ -281,7 +295,9 @@ footer{
   height: 300px;
   padding:10px;
 }
-.sociallinks{
+.sociallinks, .copyright{
+  color:#DBDBDB;
+  font-size:15px;
   margin:0 auto;
   display:block;
   margin-bottom: 20px;
