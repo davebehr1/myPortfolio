@@ -195,6 +195,7 @@ button[type=submit]{
 }
 .vizskill{
   height:35px;
+  position: relative;
   width: 100%;
   background-color: #FFF;
   margin-bottom: 30px;
@@ -209,26 +210,12 @@ button[type=submit]{
   width:20%;
   float:left;
 }
-
-.node{
+.node, .react, .meteor, .java, .devops{
   height:100%;
   background-color: #303942;
-  width:20%;
-  float: left;
-}
-.react{
-  height:100%;
-  background-color: #303942;
-  width:40%;
+  width:0%;
 
 }
-.meteor{
-  height:100%;
-  background-color: #303942;
-  width:40%;
-
-}
-
 .bg .btn-primary {
   
   border-radius: 30px;

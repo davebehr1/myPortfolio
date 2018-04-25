@@ -38,8 +38,20 @@
 };
 
   $(window).on("resize scroll", function() {
-      if($('.react').isInViewport()){
+      var speed = 800;
+      var flag = true;
+      if($('.java').isInViewport() && flag){
+
+        $(".meteor").animate({width: "10%"},speed);
+        $(".react").animate({width: "20%"},speed);
+        $(".java").animate({width: "60%"},speed);
+        $(".node").animate({width: "50%"},speed);
+        $(".devops").animate({width: "20%"},speed);
         console.log('in view port');
+        flag = false;
+      }
+      else{
+        console.log('not in view port');
       }
       /*if($('#contact').isInViewport()){
         console.log('In view port');
