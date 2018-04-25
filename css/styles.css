@@ -6,10 +6,18 @@ body, html {
 
 
 }
+.fa{
+  padding: 10px;
+  color: gray;
+}
+.fa:hover{
+  color: white;
+  text-decoration: none;
+}
 .navbar{
  background-color: #252934; 
  border: none;
- z-index: 1 !important;
+ margin-bottom:0px;
 }
 .modal-dialog{
   position: absolute;
@@ -256,11 +264,11 @@ footer{
   #about p {
     margin:5%;
     text-align: justify;
-    display: none;
+    display: inline-block;
     background-color: #EEE;
   }
-  #about h2{
-    display: none;
+  #about h2{  
+    margin: 0px;
   }
   #work{
     width:100%;
@@ -273,7 +281,7 @@ footer{
 
   #contact{
     width:100%;
-    
+    padding:15px;
 
     background-color: #dbdbdb;
 
