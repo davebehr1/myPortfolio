@@ -47,6 +47,10 @@ button[type=submit]{
 #formMessage input{
       background-color:rgba(0,0,0,0) !important;
 }
+a{
+  text-decoration: none;
+  border: 0;
+}
 
 .btn{
   transition: all .2s ease-in-out;
@@ -55,12 +59,18 @@ button[type=submit]{
   background: none;
   padding: 12px 22px;
 }
-#carRental{
+.carRental{
+   background-image: url('carRental.jpg');
+}
+.anim{
+  background-image: url('anim.jpg');
+}
+.boxImage{
   z-index: 1 !important;
   position: relative;
   width:100%;
   height:100%;
-  background-image: url('carRental.jpg');
+ 
   background-size: 220%;
   background-repeat: no-repeat;
   transition: all 1s ease;
@@ -69,7 +79,7 @@ button[type=submit]{
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
 }
-#carRental:hover{
+.boxImage:hover{
    transform: scale(1.5);
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
@@ -255,7 +265,7 @@ footer{
   
   #about{
   	width:100%;
-  	
+  	padding-top:20px;
     margin-top: 0px;
 
   	background-color: #EEE;
@@ -288,6 +298,7 @@ footer{
   }
   #message{
     width:100%;
+    padding-bottom:20px;
     display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,6 +309,17 @@ footer{
   margin:0 auto;
   display:block;
   margin-bottom: 20px;
+ }
+
+ #message span{
+  padding: 10px;
+ }
+
+ #message a{
+  margin: 0 auto;
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
  }
   .row2{
   background-color: #353130;
