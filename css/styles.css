@@ -6,6 +6,40 @@ body, html {
 
 
 }
+#typewriter{
+  margin-top:20px;
+  height:45px;
+}
+.line-1{
+
+    position: relative;
+    height:100%;
+    width: 24em;
+    padding-top: 5px;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-40%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 6s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+  animation-iteration-count: infinite;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
 .fa{
   padding: 10px;
   color: gray;
