@@ -48,6 +48,7 @@ button[type=submit]{
   padding: 12px 22px;
 }
 #carRental{
+  z-index: 1 !important;
   position: relative;
   width:100%;
   height:100%;
@@ -68,8 +69,10 @@ button[type=submit]{
   -ms-transform: scale(1.5);
 }
 #carText{
- position: absolute;
- color: white;
+  z-index: 1000 !important;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 .btn-primary.outline {
   border-radius: 30px;
@@ -217,6 +220,8 @@ footer{
 .col-sm-3{
   overflow:hidden;
   position: relative;
+  text-align: center;
+  color: white;
   height: 300px;
   margin:10px;
   padding:0px;
@@ -243,7 +248,7 @@ footer{
   #about{
   	width:100%;
   	
-   
+    margin-top: 0px;
 
   	background-color: #EEE;
     
