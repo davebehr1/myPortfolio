@@ -1,6 +1,10 @@
  AOS.init({
   duration: 1200,
-})
+ });
+
+  $('submit').click(function(){
+    $('#feeback').append('<h2>will be in touch shortly</h2>');
+  });
 
   $('#message button').click(function(){
     $('.navbar').hide();
