@@ -17,6 +17,30 @@ body, html {
   position: absolute;
   z-index: 1000 !important;
 }
+input[type=text]{
+  width:50%;
+  height:100px;
+  margin: 0 auto;
+  display: block;
+  text-align: justify;
+}
+input[type=email]{
+  width:50%;
+  margin: 0 auto;
+  display: block;
+}
+button[type=submit]{
+  padding: 10px 20px;
+    font-size: 20px;
+  margin: 0 auto;
+  display: block;
+  background: none;
+   border-radius: 30px;
+  color: white; 
+}
+#formMessage input{
+      background-color:rgba(0,0,0,0) !important;
+}
 
 .btn{
   transition: all .2s ease-in-out;
