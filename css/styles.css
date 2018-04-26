@@ -234,6 +234,10 @@ button[type=submit]{
   }
   #projButton{
     left:15% !important;
+    display: block !important;
+  }
+  #carText{
+    display: block !important;
   }
 
   h2{
