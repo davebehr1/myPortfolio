@@ -175,6 +175,10 @@ button[type=submit]{
   .bg {      
      background-image:none;
      background-color: #2B353A;
+
+  }
+  h2{
+    font-size: 1.5em;
   }
 }
 .information{
