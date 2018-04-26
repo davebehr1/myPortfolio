@@ -2,10 +2,28 @@
   duration: 1200,
  });
 
+ $('.information').hover(function(){
+  console.log('you are hovering');
+  $(this).find('a').fadeIn(300);
+  $(this).find('#carText').fadeIn(300);
+ });
+
+  $('.information').mouseleave(function(){
+  console.log('you are hovering');
+  $(this).find('a').fadeOut(300);
+  $(this).find('#carText').fadeOut(300);
+ });
 
   $("#formMessage").submit(function(e) {
   e.preventDefault();
  // $('#feedback').append('<h3 style="color:white;text-align:center;">will be in contact soon</h3>');
+  if( $('#email').val().length === 0 ) {
+        $('<h3 style="color:white;text-align:center;">Please fill in an email address</h3>').hide().appendTo('#feedback').fadeIn(1000);
+  }
+  if( $('#textMessage').val().length === 0 ) {
+        $('<h3 style="color:white;text-align:center;">Please add a message</h3>').hide().appendTo('#feedback').fadeIn(1000);
+  }else{
+
   $('#feedback').empty();
   $('<h3 style="color:white;text-align:center;">will be in contact soon</h3>').hide().appendTo('#feedback').fadeIn(1000);
 
@@ -13,6 +31,7 @@
   $.post($form.attr("action"), $form.serialize()).then(function() {
     alert("Thank you!");
   });
+  }
   });
 
   $('submit').click(function(){
