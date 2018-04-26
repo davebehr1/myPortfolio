@@ -181,16 +181,16 @@ button[type=submit]{
     font-size: 1.5em;
   }
 }
-.information{
-}
 .bg img{
   height:25%;
   display: block; 
   margin:0 auto;
 
 }
-#skillheading{
+.skillheading{
   text-align: center;
+  margin:none;
+  padding:none;
 }
 .skillType{
   margin-left:20px;
@@ -279,8 +279,10 @@ footer{
   justify-content: center;
   background-color: #252A30;
 }
-
-.col-md-3{
+#right-arrow{
+  float:right;
+}
+.information{
   overflow:hidden;
   position: relative;
   text-align: center;
