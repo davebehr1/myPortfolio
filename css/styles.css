@@ -130,16 +130,9 @@ button[type=submit]{
   background: none;
   padding: 12px 22px;
 }
-.carRental{
-   background-image: url('carRental.jpg');
-   background-repeat: no-repeat;
-}
-.anim{
-  background-image: url('anim.jpg');
-  background-repeat: no-repeat;
-}
 .boxImage{
   z-index: 1 !important;
+  background-color: #656869;
   position: relative;
   margin:0px;
   padding:0px;
@@ -163,9 +156,10 @@ button[type=submit]{
 #carText{
   z-index: 1000 !important;
   position: absolute;
-  text-align: center;
   word-wrap: break-word;
   display: none;
+  left:0;
+  right:0;
   bottom: 50%;
 }
 #projButton{
