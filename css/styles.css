@@ -45,9 +45,30 @@ h1, h2, h3, h4{
   to{border-right-color: transparent;}
 }
 
+.right-arrow, .left-arrow{
+  cursor:pointer;
+  transition: all .2s ease-in-out;
+}
+.right-arrow:hover, .left-arrow:hover{
+  transform: scale(1.1);
+}
+
 .fa{
   padding: 10px;
   color: gray;
+}
+.devImages  img{
+  width:100px;
+}
+.devImages{
+
+  margin: 0 auto;
+  display: table;
+  margin-top:100px;
+}
+.dev{
+   opacity: 0;
+  float:left;
 }
 .fa:hover{
   color: white;
@@ -129,6 +150,7 @@ button[type=submit]{
   z-index: 1000 !important;
   position: absolute;
   text-align: center;
+  word-wrap: break-word;
   display: block;
   bottom: 50%;
 }

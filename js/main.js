@@ -64,6 +64,15 @@
 
     currentSlide.fadeOut(300).removeClass('active');
     nextSlide.fadeIn(300).addClass('active');
+
+    if ( $( ".slide:eq(1)" ).is( ".active" ) ) {
+      console.log('dev is acive');
+      $(".dev").each(function(){
+        $(this).animate({opacity:1},1000);
+      })
+    }else{
+      $(".dev").css({opacity:0});
+    }
     if(nextSlide.length == 0){
       $('.slide').first().fadeIn(300).addClass('active');
     }
