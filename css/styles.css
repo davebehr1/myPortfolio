@@ -187,11 +187,6 @@ button[type=submit]{
   margin:0 auto;
 
 }
-.skillheading{
-  text-align: center;
-  margin:none;
-  padding:none;
-}
 .skillType{
   margin-left:20px;
   height:300px;
@@ -282,6 +277,11 @@ footer{
 #right-arrow{
   float:right;
 }
+.slide{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+}
 .information{
   overflow:hidden;
   position: relative;
@@ -341,13 +341,14 @@ footer{
     background-color: #303942;
   }
   #workwith{
-    text-align: center;
+    text-align: cen70;
   }
 
   #contact{
     width:100%;
     padding:15px;
-
+    position: relative;
+    height:70%;
     background-color: #dbdbdb;
 
   }
