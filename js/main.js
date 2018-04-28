@@ -1,17 +1,20 @@
 $(document).ready(function(){
-  console.log('yes');
+  //console.log('yes');
+    var contactHeight =0;
    if($("#contact").width() < 890 ){
         $("#contact").height(800);
-        console.log("set height");
+        //console.log("set height");
     }else{
       $("#contact").height(500);
     }
 
   $(window).resize(function(){
-    console.log("resized");
-    if($("#contact").width() < 890){
+    console.log("resized: " + $("#contact").width());
+    if($("#contact").width() < 890 && $("#contact").width() > 400){
         $("#contact").height(800);
-        console.log("set height");
+    }else if($("#contact").width() < 400){
+        $("#contact").height(1050);
+
     }else{
       $("#contact").height(500);
     }
