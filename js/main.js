@@ -1,15 +1,36 @@
+$(document).ready(function(){
+  console.log('yes');
+   if($("#contact").width() < 890 ){
+        $("#contact").height(800);
+        console.log("set height");
+    }else{
+      $("#contact").height(500);
+    }
+
+  $(window).resize(function(){
+    console.log("resized");
+    if($("#contact").width() < 890){
+        $("#contact").height(800);
+        console.log("set height");
+    }else{
+      $("#contact").height(500);
+    }
+
+  });
+});
+
  AOS.init({
   duration: 1200,
  });
 
  $('.information').hover(function(){
-  console.log('you are hovering');
+  //console.log('you are hovering');
   $(this).find('a').fadeIn(300);
   $(this).find('#carText').fadeIn(300);
  });
 
   $('.information').mouseleave(function(){
-  console.log('you are hovering');
+  //console.log('you are hovering');
   $(this).find('a').fadeOut(300);
   $(this).find('#carText').fadeOut(300);
  });
@@ -66,11 +87,11 @@
         $(".java").animate({width: "60%"},speed);
         $(".node").animate({width: "50%"},speed);
         $(".devops").animate({width: "20%"},speed);
-        console.log('in view port');
+        //console.log('in view port');
         flag = false;
       }
       else{
-        console.log('not in view port');
+        //console.log('not in view port');
       }
       /*if($('#contact').isInViewport()){
         console.log('In view port');
@@ -86,6 +107,7 @@
 
     if ( $( ".slide:eq(1)" ).is( ".active" ) ) {
       console.log('dev is acive');
+      //$("#contact").css({"height":130  + "% !important"});
       $(".dev").each(function(){
         $(this).animate({opacity:1},1000);
       })
