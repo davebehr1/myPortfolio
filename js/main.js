@@ -2,7 +2,7 @@ $(document).ready(function(){
   //console.log('yes');
     var contactHeight =0;
    if($("#contact").width() < 890 ){
-        $("#contact").height(800);
+        $("#contact").height(900);
         //console.log("set height");
     }else{
       $("#contact").height(500);
