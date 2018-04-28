@@ -2,7 +2,7 @@ $(document).ready(function(){
   //console.log('yes');
     var contactHeight =0;
    if($("#contact").width() < 890 ){
-        $("#contact").height(900);
+        $("#contact").height(800);
         //console.log("set height");
     }else{
       $("#contact").height(500);
@@ -10,6 +10,7 @@ $(document).ready(function(){
 
   $(window).resize(function(){
     console.log("resized: " + $("#contact").width());
+    if ( $( ".slide:eq(1)" ).is( ".active" ) ) {
     if($("#contact").width() < 890 && $("#contact").width() > 400){
         $("#contact").height(800);
     }else if($("#contact").width() < 400){
@@ -17,6 +18,7 @@ $(document).ready(function(){
 
     }else{
       $("#contact").height(500);
+    }
     }
 
   });
