@@ -1,32 +1,20 @@
-$(document).ready(function(){
-  //console.log('yes');
-    var contactHeight =0;
-   if($("#contact").width() < 890 ){
-        $("#contact").height(800);
-        //console.log("set height");
-    }else{
-      $("#contact").height(500);
-    }
 
-  $(window).resize(function(){
-    console.log("resized: " + $("#contact").width());
-    if ( $( ".slide:eq(1)" ).is( ".active" ) ) {
-    if($("#contact").width() < 890 && $("#contact").width() > 400){
-        $("#contact").height(800);
-    }else if($("#contact").width() < 400){
-        $("#contact").height(1050);
-
-    }else{
-      $("#contact").height(500);
-    }
-    }
-
-  });
-});
 
  AOS.init({
   duration: 1200,
  });
+ $(".left").click(function(){
+  console.log('clicked left');
+ });
+ $(".right").click(function(){
+  console.log('clicked right');
+ });
+
+ $('#myCarousel').on('slide',function(e){
+    var slideFrom = $(this).find('.active').index();
+    var slideTo = $(e.relatedTarget).index();
+    console.log(slideFrom+' => '+slideTo);
+});
 
  $('.information').hover(function(){
   //console.log('you are hovering');
@@ -105,12 +93,14 @@ $(document).ready(function(){
 
   $('.right-arrow').click(function(){
     var currentSlide = $('.slide.active');
-    var nextSlide =  currentSlide.next();
+    var nextSlide =  currentSlide.next('.slide');
 
     currentSlide.fadeOut(300).removeClass('active');
+    currentSLide.addClass('inactive');
+    $('.slide:eq(1)').removeClass('inactive');
     nextSlide.fadeIn(300).addClass('active');
 
-    if ( $( ".slide:eq(1)" ).is( ".active" ) ) {
+    /*if ( $( ".slide:eq(1)" ).is( ".active" ) ) {
       console.log('dev is acive');
       //$("#contact").css({"height":130  + "% !important"});
       $(".dev").each(function(){
@@ -118,7 +108,7 @@ $(document).ready(function(){
       })
     }else{
       $(".dev").css({opacity:0});
-    }
+    }*/
     if(nextSlide.length == 0){
       $('.slide').first().fadeIn(300).addClass('active');
     }
