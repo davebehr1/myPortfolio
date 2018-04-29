@@ -78,14 +78,12 @@
   </div>
   </div>
 
-  <div id="contact" class="container">
-    <div class="slide active">
-    <div class=" row skillheading">
-          <div class="col-xs-offset-3 col-md-offset-3 col-xs-2 col-md-2 left-arrow"><</div>
-          <div class="col-md-2 col-xs-2 active"><h3>CODE</h3></div>
-          <div class="col-md-2 col-xs-2 col-md-offset-1 col-xs-offset-1 right-arrow">></div>
-    </div>
-    <div class="row">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+         <div class="skillheading"><h3>CODE</h3></div>
+    <div class="row" style="padding-bottom: 10px;">
 
         <div class=" col-xs-10 col-xs-offset-1 col-md-offset-3 col-md-6 information">
           <div class = "vizskill">
@@ -116,27 +114,40 @@
           </div>
     </div>
   </div>
-  </div>
-
-
-  <div class="slide">
-   <div class="row skillheading">
-          <div class="col-xs-offset-3 col-md-offset-3 col-xs-2 col-md-2 left-arrow"><</div>
-          <div class="col-md-2 col-xs-2 active"><h3>DEV OPS</h3></div>
-          <div class="col-md-2 col-xs-2 col-md-offset-1 col-xs-offset-1 right-arrow">></div>
-    </div>
-    <div class="row">
-    <div class="col-xs-offset-2 col-xs-8 devtext">I have a keen interest in DevOps(developer operations) which takes into account software creation and deployment. Good software has no worth if it is not available and reliable, this is what the field of devops aims to provide, by firstly setting up a work flow that makes it easy for new features to be deployed to software and by keeping the service up and running constantly scaling it when necessary. My experience has mainly centered around a few technologies including Rancher and Docker which I use on a day to day basis, Github as a version control system and travis which is used for continous integration. I am constantly growing in this relatively new field and will do my best to provide the best service possible.</div>
+                
     
+      </div>
+
+      <div class="item">
+   
+         
+      <div class="skillheading"><h3>DEVOPS</h3></div>
+          <div class="row">
+          <div class="col-xs-offset-2 col-xs-8 devtext">I have a keen interest in DevOps(developer operations) which takes into account software creation and deployment. Good software has no worth if it is not available and reliable, this is what the field of devops aims to provide, by firstly setting up a work flow that makes it easy for new features to be deployed to software and by keeping the service up and running constantly scaling it when necessary. My experience has mainly centered around a few technologies including Rancher and Docker which I use on a day to day basis, Github as a version control system and travis which is used for continous integration. I am constantly growing in this relatively new field and will do my best to provide the best service possible.</div>
+          
+        </div>
+         <div class="row devImages" style="padding-bottom: 10px;">
+          <div class ="col-xs-offset-2 col-xs-2 col-md-2" id="travis" ><img src="css/travis.png"></div>
+          <div class ="col-xs-2 col-md-2" id="docker" ><img src="css/docker.png"></div>
+          <div class ="col-xs-2 col-md-2" id="rancher" ><img src="css/rancher.png"></div>
+          <div class ="col-xs-2 col-md-2" id="prometheus"><img src="css/prom.png"></div>
+        </div>
+
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="background:none !important">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="background:none !important">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <div class="devImages">
-    <div class ="dev" id="travis" ><img src="css/travis.png"></div>
-    <div class ="dev" id="docker" ><img src="css/docker.png"></div>
-    <div class ="dev" id="rancher" ><img src="css/rancher.png"></div>
-    <div class ="dev" id="prometheus"><img src="css/prom.png"></div>
-  </div>
-</div>
-</div>
+<!--</div>-->
 
   <div id="message" class="container">
     <h4 id="workwith">WANT TO WORK WITH ME</h4>
