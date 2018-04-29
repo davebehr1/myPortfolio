@@ -8,13 +8,13 @@ $(document).ready(function(){
       console.log(response);
       var output = '';
       $.each(response.items, function (k, item) {
-        var visibleSm;
-        if(k < 3){
+        var visileSm;
+        if(k < 4){
           visibleSm = '';
          } else {
            visibleSm = ' visible-sm';
          }
-        output += '<div class="col-md-offset-1 col-sm-offset-1 col-sm-2 col-md-3' + visibleSm + '">';
+        output += '<div class="col-sm-offset-1 col-sm-2 col-md-2' + visibleSm + '">';
         output += '<div class="blog-post" style="padding:10px;"><header>';
         //output += '<h4 class="date">' + $.format.date(item.pubDate, "dd<br>MMM") + "</h4>";
         var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
