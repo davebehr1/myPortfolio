@@ -11,22 +11,21 @@
 body, html {
     height: 100%;
     margin: 0;
-
-
-
 }
 h1, h2, h3, h4, p{
   font-family: montserratLight;
   margin-top: 0px;
 }
+#heading{
+  text-align:center;
+  margin-top:10%;
+  color: white;
+  font-weight:bold;
+}
 #typewriter{
   margin-top:20px;
   height:45px;
   display: block;
-}
-
-.modal-title{
-      font-family: montserrat;
 }
 .line-1{
 
@@ -50,6 +49,40 @@ h1, h2, h3, h4, p{
              blinkTextCursor 500ms steps(44) infinite normal;
   animation-iteration-count: infinite;
 }
+
+
+.navbar{
+ background-color: #252934; 
+ border: none;
+ margin-bottom:0px;
+}
+
+#about{
+    width:100%;
+    padding-top:20px;
+    margin-top: 0px;
+
+    background-color: #EEE;
+    
+}
+#about p {
+    margin:5%;
+    text-align: justify;
+    display: inline-block;
+    background-color: #EEE;
+}
+#about h2{  
+    margin: 0px;
+}
+#aboutText{
+  text-align: center;
+}
+
+
+.modal-title{
+      font-family: montserrat;
+}
+
 @keyframes typewriter{
   from{width: 0;}
   to{width: 16em;}
@@ -82,11 +115,7 @@ h1, h2, h3, h4, p{
   color: white;
   text-decoration: none;
 }
-.navbar{
- background-color: #252934; 
- border: none;
- margin-bottom:0px;
-}
+
 .modal-dialog{
   position: absolute;
   z-index: 1000 !important;
@@ -376,23 +405,7 @@ footer{
       padding-top: 70px;
   }
   
-  #about{
-  	width:100%;
-  	padding-top:20px;
-    margin-top: 0px;
 
-  	background-color: #EEE;
-    
-  }
-  #about p {
-    margin:5%;
-    text-align: justify;
-    display: inline-block;
-    background-color: #EEE;
-  }
-  #about h2{  
-    margin: 0px;
-  }
   #closer{
     -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
