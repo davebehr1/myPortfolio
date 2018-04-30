@@ -574,6 +574,7 @@ footer{
   margin-bottom:10px;
   -webkit-transition:0.5s;
   transition:0.5s;
+  cursor: pointer;
 }
 .blog .blog-post {
   margin-bottom: 40px;
