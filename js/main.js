@@ -5,16 +5,16 @@ $(document).ready(function(){
   };
   $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40davebehr1', data, function (response) {
     if (response.status == 'ok') {
-      console.log(response);
-      var output = '';
+      var output = '<div class="col-sm-2 col-md-2"></div>';
       $.each(response.items, function (k, item) {
+        console.log("K:" + k);
         var visileSm;
         if(k < 4){
           visibleSm = '';
          } else {
            visibleSm = ' visible-sm';
          }
-        output += '<div class="col-sm-offset-1 col-sm-2 col-md-2' + visibleSm + '">';
+        output += '<div class="col-sm-2 col-md-2' + visibleSm + '">';
         output += '<div class="blog-post" style="padding:10px;"><header>';
         //output += '<h4 class="date">' + $.format.date(item.pubDate, "dd<br>MMM") + "</h4>";
         var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
@@ -38,7 +38,12 @@ $(document).ready(function(){
       $content.html(output);
     }
   });
+
 });
+
+
+
+
 
  AOS.init({
   duration: 1200,
@@ -55,6 +60,7 @@ $(document).ready(function(){
     var slideTo = $(e.relatedTarget).index();
     console.log(slideFrom+' => '+slideTo);
 });
+
 
  $('.information').hover(function(){
   //console.log('you are hovering');
