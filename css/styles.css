@@ -316,6 +316,30 @@ button[type=submit]{
   width:0%;
 
 }
+.PS{
+  height:100%;
+  background-color: #303942;
+  width:80%;
+
+}
+.ILL{
+  height:100%;
+  background-color: #303942;
+  width:50%;
+
+}
+.AE{
+  height:100%;
+  background-color: #303942;
+  width:50%;
+
+}
+.DR{
+  height:100%;
+  background-color: #303942;
+  width:70%;
+
+}
 .bg .btn-primary {
   
   border-radius: 30px;
