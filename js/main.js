@@ -215,3 +215,5 @@ $(document).ready(function(){
 
     $(".bg").css("opacity", 1 - $(window).scrollTop() / 700);
   });
+
+  page('/',index);
